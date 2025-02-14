@@ -47,7 +47,7 @@ export default function EnhancedDynamicPortfolio() {
       className={`flex min-h-screen bg-gray-100 dark:bg-gray-900 transition-colors duration-300 ${darkMode ? "dark" : ""}`}
     >
       {/* Sidebar */}
-      <aside className="w-64 bg-gradient-to-b from-purple-700 to-indigo-800 dark:from-purple-900 dark:to-indigo-950 text-white p-6 flex flex-col">
+      <aside className="w-80 bg-gradient-to-b from-purple-700 to-indigo-800 dark:from-purple-900 dark:to-indigo-950 text-white p-6 flex flex-col">
         <div className="flex flex-col items-center mb-8">
           <div className="relative w-32 h-32 mb-4">
             <Image
@@ -66,10 +66,10 @@ export default function EnhancedDynamicPortfolio() {
               <li key={item.label}>
                 <Button
                   variant="ghost"
-                  className={`w-full justify-start ${activeSection === item.label ? "bg-white bg-opacity-10" : ""}`}
+                  className={`w-full justify-start text-lg ${activeSection === item.label ? "bg-white bg-opacity-10" : ""}`}
                   onClick={() => setActiveSection(item.label)}
                 >
-                  <item.icon className="mr-2 h-4 w-4" />
+                  <item.icon className="mr-2 w-10 h-10" />
                   {item.label}
                 </Button>
               </li>
